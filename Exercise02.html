@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // bài 9
+      //     var bai9 = (x,n)=>{
+      //         var s= 1;
+      //         for(var i=1; i<=n;i++){
+      //             s+=x**i/i;
+      //         }
+      //         return s;
+      //     }
+      //     console.log(bai9(2,5));
+      // bài 10
+      //bài 11 Viết chương trình có sử dụng hàm
+      // Viết chương trình nhập mảng một chiều A với n phần tử
+      // (n>=9). Xuất mảng A ra màn hình.Sắp xếp mảng theo thứ tự giảm dần,xuất ra lại màn hình
+      // var array = [2,3,6,5,9,7,6,7,25]
+      // var bai11 = (array)=>{
+      //     console.log(array);
+      //     array.sort(function(a,b){return b - a})
+      //     return array;
+      // }
+      // console.log(bai11(array));
+      //     Bài 12:Viết chương trình nhập mảng một chiều A với n phần tử (n>=15).
+      //     Xuất mảng A ra màn hình.Xuất ra các số chia hết cho 5.
+      //   var array = [20, 5, 4, 46, 13, 4, 6, 7, 9, 25];
+      //   var bai12 = (array) => {
+      //     for (var i = 0; i < array.length; i++) {
+      //       if (array[i] % 5 !== 0) {
+      //         array.splice(i, 1);
+      //         i--;
+      //       }
+      //     }
+      //     return array;
+      //   };
+      //   console.log(array);
+      //   console.log(bai12(array));
+      // Bài 13:
+      //   Viết chương trình nhập mảng 1 chiều A có N phần tử có sử dụng hàm(với N nhập từ bàn phím). :
+      // Xuất các phần tử đã nhập ra màn hình .Xuất ra màn hình các số nguyên tố của mảng A
+      // var n = Number(prompt("Nhap n"));
+      // var array=[];
+      // var bai13 =(n)=>{
+      //   for(i=0;i<n;i++){
+      //     array[i] = Number(prompt(`Nhap Phần tử ${i} của mảng`));
+      //   }
+      //   console.log(array);
+      // }
+      // function soNguyenTo(array) {
+      //   for(i=0;i< array.length;i++ ){
+      //     if(array[i]<2){
+      //        continue
+      //     }else{
+      //       for(j=2; j<=Math.sqrt(array[i]);j++){
+      //         if(array[i]%j !== 0){
+      //               console.log(array[i]);
+      //           }
+      //           }
+      //         }
+      //       }
+      // }
+      // bai13(n);
+      // soNguyenTo(array);
+      // Bài 14:In ra màn hình dãy số Fibonaxi nhỏ hơn với N nhập từ bàn phím. Biết rằng dãy Fibonaxi có dạng như sau: Fn=Fn-1+Fn-2 với F1=1, F2=1.
+    //   var bai14 =(n)=>{
+    //     var i = 0;
+    //     do{
+    //       var f0 = 0;
+    //       var f1 = 1;
+    //       var fn = 1;
+    //       if (i < 0) {
+    //           console.log(-1);
+    //       } else if (i == 0 || i == 1) {
+    //           console.log(i);
+    //       } else {
+    //           for (var j = 2; j < i; j++) {
+    //               f0 = f1;
+    //               f1 = fn;
+    //               fn = f0 + f1;
+    //           }
+    //         if (fn<n){console.log(fn);} 
+    //       }
+    //       i++;
+    //     }while(i<n && fn<n)        
+    // }
+    // bai14(20); 
+    // bài 15:
+    // Viết chương trình nhập mảng 1 chiều A có N phần tử có sử dụng hàm(với N nhập từ bàn phím). :
+    // Xuất các phần tử đã nhập ra màn hình,Xuất ra màn hình các số chính phương của mảng A
+    // var bai15 = (n)=>{
+    //   var array=[]
+    //   for(var i=0;i<n;i++){
+    //     array[i] = Number(prompt(`Nhap Phần tử ${i} của mảng`));
+    //   }
+    //   console.log(array);
+    //   function chinhPhuong(){
+    //     for(i=0;i<array.length;i++){
+    //       var sp = Math.sqrt(array[i])
+    //       if (sp-Math.floor(sp)!=0){
+    //         array.splice(i,1)
+    //         i--;
+    //       }
+    //     }
+    //     console.log("Số chính phương: "+array);
+    //   }
+    //   return chinhPhuong();
+    // }
+    // bai15(Number(prompt('Nhập n')));
+    // Bài 16:Viết chương trình nhập vào số nguyên N và sau đó in ra số
+    // đảo của N? Ví dụ: N=12345. In ra 54321.
+    // var bai16=(n)=>{
+    //   var result=0;
+    //   while(n!=0){
+    //     var so=n%10;
+    //     result = result*10 +so;
+    //     n= Math.floor(n/10);
+    //   }
+    //   return result;
+    // }
+    // console.log(bai16(Number(prompt("Nhập sô"))));
+//     Bài 17:Viết chương trình nhập mảng 1 chiều A có N phần tử có sử
+//    dụng hàm(với N nhập từ bàn phím). :Xuất các phần tử đã nhập ra màn hình,Xuất ra màn hình các số hoàn hảo của mảng A?
+    // var bai17 = (n)=>{
+    //   var array=[]
+    //   for(var i=0;i<n;i++){
+    //     array[i] = Number(prompt(`Nhap Phần tử ${i} của mảng`));
+    //   }
+    //   console.log(array);
+    //   function hoanHao(){    
+    //     for(var i=0;i<array.length;i++){
+    //       var sum=0;
+    //       for(var j=1; j<=array[i]/2;j++){
+    //         if(array[i]%j==0){
+    //           sum+=j;
+    //         }
+    //       }
+    //       if (sum !== array[i]){
+    //         array.splice(i,1);
+    //         i--;
+    //       }
+    //     }
+    //     console.log("Số Hoàn Hảo: "+array);
+    //   }
+    //   return hoanHao();
+    // }
+    // bai17(Number(prompt("Nhập n")));
+    // Bài 18: Viết chương trình tính N!!, với N nhập từ bàn phím.
+    // N chẵn: N!!=2*4*6*...*N.
+    // N lẻ: N!!=1*3*5*...*N
+    var bai18 = (n)=>{
+      var result = 1;
+      if (n%2==0){
+        for (var i=2;i<=n;i+=2){
+          result*=i;
+        }
+      }else{
+        for (var i=1;i<=n;i+=2){
+          result*=i;
+        }
+      }
+      return result;
+    }
+    console.log(bai18(3));
+    </script>
+  </body>
+</html>

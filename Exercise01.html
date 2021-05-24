@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // -------01 Viết chương trình có sử dụng hàm kiểm tra n (nhập từ bàn phím) có phải số nguyên tố không ?
+/*let n = Number(prompt("Nhap n"));
+function ktsonguyento(n){
+    let dem = 0;
+    if (n < 2) {
+      console.log("Ko phai so nguyen to");
+    } else {
+      for (let i = 1; i <= n; i++) {
+        if (n % i == 0) {
+          dem++;
+        }
+      }
+      if (dem == 2) console.log("la so nguyen to");
+      else console.log("ko phai so nguyen tó");
+    }
+}
+ktsonguyento(n)*/
+//2 Viết chương trình có sử dụng hàm Viết chương trình nhập mảng một chiều A với n phần tử (n>=10). Xuất mảng Ara màn hình các nguyên tố trong A trên.
+// let array = [3,5,6,7,10,6,8,6,9]
+// function showInfo(array){
+//     for(var i=0;i<array.length;i++){
+//         var dem=0;
+//         if (array[i]<2){
+//             continue;
+//         }else{
+//             for(var j=1;j<=array[i];j++ ){
+//                 if(array[i]%j==0){
+//                     dem++;
+//                 }
+//             }if (dem!=2){
+//                 array.splice(i,1); 
+//                 i--;
+//             }
+//         }
+//     }
+//     return array;
+// }
+// console.log(array);
+// console.log(showInfo(array));
+
+// 03 Số hoàn hảo là số nguyên dương bằng tổng các ước thực sự
+// của nó. Ví dụ: 6=1+2+3. Viết chương trình có sử dụng hàm kiểm tra n (nhập từ bàn phím) có phải số hoàn hảo không ?
+
+/*let n = Number(prompt("nhap n"));
+function soNguyenHao(n){
+    var s=0;
+    for(var i=1;i<=n/2;i++){
+        if(n%i==0){
+            s+=i;
+        }
+    }if (s==n){
+        console.log(`${n} là số nguyên hảo`);
+    }else{ console.log(`${n} không là số nguyên hảo`);}
+}
+soNguyenHao(n);
+*/
+// 04 Viết chương trình có sử dụng hàm
+// Viết chương trình nhập mảng một chiều A với n phần tử
+// (n>=10).Xuất mảng A ra màn hình:
+// Xuất ra màn hình các hoàn hảo trong A trên
+
+// let array = [6,7,5,4];
+// function arraySoNguyenHao(array){
+//     for(var i=0 ;i<array.length; i++){
+//         let s=0;
+//         // console.log(array[i]);
+//         for(var j=1;j<=array[i]/2;j++){
+//             if(array[i]%j==0){
+//                 s+=j;
+//             }
+//         }
+//         if(s!=array[i]){
+//            array.splice(i,1)
+//            i--;
+//         }
+//     }
+//     return array;
+// }
+// console.log(arraySoNguyenHao(array));
+// 05. Viết chương trình nhập số nguyên dương a và kiểm tra a có phải là số tự đối xứng không?Ví dụ: 5, 232, 5775 tự đối xứng, nhưng 2342 thì không tự đối xứng
+// let n = Number(prompt("nhap n"));
+function ktDoiXung(n){
+  var result = 0;
+  var m=n;
+  var soDu;
+  while(n!=0){
+    soDu= n%10;
+    result = result*10 + soDu;
+    n = Math.floor(n/10);
+  }
+  if (m==result){
+    console.log(`${m} là số đối xứng`);
+  }else{console.log(`${m} không phải là đối xứng`);}
+}
+ktDoiXung(2332)
+</script>
+  </body>
+</html>
